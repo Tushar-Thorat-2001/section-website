@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>section website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+  </head>
+  <body>
+    <section id="header">
+    <div class="container" >
+      <img src="loo.png" class="logo">
+      <div class="header-text">
+       <h1> The purpose  is to teach<br>
+       bring learning to people</h1>
+       <span class="square"></span>
+       <p><br>“It is during our darkest moments that we must focus to see the light.”<br></p>
+
+      </div>
+
+    </div>
+    
+    </section>
+    <nav id="sideNav">
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#feature">Features</a></li>
+        <li><a href="#courses">Course</a></li>
+        <li><a href="htmcss1\img\index.html"  target=_blank>contact</a></li>
+     </ul>
+    </nav>
+     <img src="menu.png" id="menubt">
+       <section id="about">
+         <div class="about-left-col">
+          <img src="about.png"></div>
+          <div class="about-right-col">
+           <h1> About Us <br>
+            <span class="square"></span></h1>
+            
+             <p id ="i">Our digital resources, tools, and learning materials are developed by educational experts,<br>
+             to incorporate leading pedagogical practices</p>
+             <div class ="line">
+              <span class="line-1"></span><br>
+              <span class="line-2"></span><br>
+              <span class="line-3"></span><br>
+              </div>
+        </section>
+
+
+        <section id="feature">
+         <div class="frow">
+           <div class="fcol">
+               <img src="pic-1.png" >
+               <h4> Learn Anywhere</h4>
+               <p>Switch between yoour computer, table or mobile device</p>
+               </div>
+           <div class="fcol">
+              <img src="pic-2.png">
+              <h4>Expert Teachers</h4>
+              <p>Learn from industry experts who are passionate about teaching.</p>
+
+            </div>
+           <div class="fcol">
+           <img src="pic-3.png">
+              <h4>Unlimeted Access</h4>
+              <p>Choose what you'd like to learn from our extensive subscription libaray</p>
+
+           
+           
+           </div>
+
+          </div>
+         </section>
+          <section id="courses">
+            <div class="container course-row">
+              <div class="course-left-col"></div>
+              <div class="course-right-col"></div>
+                 <img src="course.png">
+
+            </div>
+            </section>
+            <hr>
+
+            <footer>
+              <div id="s">
+                <img src="linkedin.png" >
+                <img src="twitter.png" >
+                <img src="instagram.png" >
+                <img src="facebook.png" >
+             </div>
+
+            </footer>
+
+
+     <script>
+         var menubt = document.getElementById("menubt");
+         var sideNav  = document.getElementById("sideNav");
+
+          sideNav.style.right = "-250px";
+          menubt.onclick = function(){
+             if(sideNav.style.right == "-250px"){
+                 sideNav.style.right = "0";
+             }
+             else{
+                 sideNav.style.right="-250px";
+             }
+         }
+
+          var scroll = new SmoothScroll('a[href*="#"]');
+          
+        </script>
+
+
+  </body>
+</html>
